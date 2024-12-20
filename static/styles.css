@@ -1,73 +1,71 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
 }
 
 .container {
-    background-color: #fff;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    text-align: center; /* Center the text and buttons */
+    height: 100vh; /* Full height of the viewport to center vertically */
 }
 
 h1 {
-    text-align: center;
     color: #333;
-    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .form-group {
     margin-bottom: 15px;
 }
 
-label {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
-    display: block;
-}
-
 input[type="text"], textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
     margin-top: 5px;
-}
-
-input[type="text"]:focus, textarea:focus {
-    border-color: #007BFF;
-    outline: none;
-}
-
-textarea {
-    resize: vertical;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 100%;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
+    background-color: #45a049;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn:hover {
     background-color: #0056b3;
 }

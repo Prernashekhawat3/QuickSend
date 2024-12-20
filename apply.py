@@ -39,8 +39,8 @@ Phone: 8955495635
 def home():
     if request.method == "POST":
         hr_emails = request.form.get("hr_email").split(',')
-        subject = request.form.get("subject") and DEFAULT_SUBJECT
-        message = request.form.get("message") and DEFAULT_MESSAGE
+        subject = request.form.get("subject") or DEFAULT_SUBJECT
+        message = request.form.get("message") or DEFAULT_MESSAGE
 
         # Send email logic
         try:
@@ -61,8 +61,14 @@ def home():
 
             return redirect("/send-email")  # Redirect to the home page after sending emails
         except Exception as e:
-            return f"An error occurred: {str(e)}"
+            # Handle error by displaying an error message
+            return render_template("error.html", error_message=str(e))
+    
     return render_template("index.html", default_subject=DEFAULT_SUBJECT, default_message=DEFAULT_MESSAGE)
+
+@app.route("/")
+def landing_page():
+    return render_template("landing_page.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
