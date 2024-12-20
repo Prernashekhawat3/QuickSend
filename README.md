@@ -27,10 +27,43 @@ HTML/CSS: For frontend design and user interface.
 
 dotenv: For securely storing and loading environment variables (email credentials).
 
-## Screenshots
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Prernashekhawat3/QuickSend.git
+```
+
+Go to the project directory
+
+```bash
+  cd QuickSend
+```
+
+Install dependencies
+
+```bash
+  pip install -r requirements.txt.
+```
+
+Set up your .env file with Gmail credentials for email sending.
+```bash
+  EMAIL_ADDRESS = "hi@gmail.com"
+  EMAIL_PASSWORD = "hello"
+```
+
+Start the server
+
+```bash
+  python apply.py
+```
+
+Visit http://localhost:5000/send-email to start sending emails.
 
 ## Screenshots
 
-![Landing Page]((https://github.com/Prernashekhawat3/QuickSend/blob/master/Landing%20page.png))
-![Send Email Page]((https://github.com/Prernashekhawat3/QuickSend/blob/master/Send%20email%20page.png))
+![Landing Page](https://github.com/Prernashekhawat3/QuickSend/blob/master/Landing%20page.png)
+![Send Email Page](https://github.com/Prernashekhawat3/QuickSend/blob/master/Send%20email%20page.png)
 
