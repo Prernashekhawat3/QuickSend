@@ -31,6 +31,6 @@ dotenv: For securely storing and loading environment variables (email credential
 
 ## Screenshots
 
-![Landing Page](https://github.com/Prernashekhawat3/timechronos/blob/main/Screenshot%20(1).png)
-![Send Email Page](https://github.com/Prernashekhawat3/timechronos/blob/main/Screenshot%20(2).png)
+![Landing Page]((https://github.com/Prernashekhawat3/QuickSend/blob/master/Landing%20page.png))
+![Send Email Page]((https://github.com/Prernashekhawat3/QuickSend/blob/master/Send%20email%20page.png))
 
